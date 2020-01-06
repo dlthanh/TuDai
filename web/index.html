@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var firstGallery = new Swiper('#firstGallery', {
+                speed: 600,
+                autoHeight: true,
+                effect: 'fade'
+            })
+
+            function changeSection(wrapper, children, navigator) {
+                $(navigator + ' li').click(function() {
+                    var activeIndex;
+                
+                    activeIndex = $(this).index();
+                    $(navigator).find('li').removeClass('active');
+                    $(this).addClass('active');
+                    $(wrapper).attr('data-section', activeIndex);
+                    $(children).attr('hidden', 'true');
+                    $(children).eq(activeIndex).removeAttr('hidden');
+                })
+            }
+
+            changeSection('#secondWrapper', '.emag-subsection', '.emag-selector');
+
+            firstGallery.on('slideChange', function() {
+                var firstGalleryAnchor = $('#firstGalleryAnchor li');
+                firstGalleryAnchor.removeClass('active');
+                firstGalleryAnchor.eq(firstGallery.activeIndex + 1).addClass('active');
+            })
+            $('#firstGalleryAnchor .prev').click(function() {
+                firstGallery.slidePrev(600);
+            })
+            $('#firstGalleryAnchor .next').click(function() {
+                firstGallery.slideNext(600);
+            })
+            $('#firstGalleryAnchor li').not('.next').not('.prev').click(function() {
+                var activeIndex = $(this).index();
+                firstGallery.slideTo(activeIndex - 1);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="emag-wrapper" data-section="1">
+        <div class="emag-section" hidden>
+            <div class="emag-cover">
+                <img src="images/tab1/cover.jpg" alt="">
+            </div>
+
+            <div class="emag-content">
+                <div class="w660">
+                    <p><strong><em>Trái Đất từng rất xinh đẹp của chúng ta đang quay những vòng quay cuối cùng khép lại năm 2019 chuyển sang năm 2020 trong một trạng thái bất ổn ngày càng gia tăng. Hàng loạt hiện tượng thời tiết cực đoan và thảm họa tự nhiên, biểu hiện rõ nét của biến đổi khí hậu, đã xảy ra trong năm 2019 và xác lập nhiều kỷ lục chưa từng có.</em></strong></p>
+
+                    <p>Nói một cách hình ảnh, Trái Đất giống như một cơ thể Tứ Đại. Tứ Đại là 4 nguyên tố <strong>Nước, Khí, Đất, Lửa</strong> hình thành nên Trái Đất, tạo nên vạn vật - theo quan niệm của cả triết học cổ đại phương Đông và phương Tây. Trong cơ thể đó, Nước là nhựa sống chảy trong cơ thể sinh vật; Nhờ Khí, sinh vật hô hấp để duy trì sự sống; Còn Đất là vật chất, là hình hài tự nhiên; Phải cần đến Lửa để sinh vật xây dựng, duy trì và lan truyền năng lượng.</p>
+
+                    <p>Và cơ thể Tứ Đại của Trái Đất đang lâm bệnh, với rất nhiều vết thương lớn.</p>
+
+                    <p>Nửa đầu năm 2019, Amazon - rừng mưa nhiệt đới lớn nhất hành tinh - phải hứng chịu hơn 40.000 trận cháy dữ dội; Liên minh Bảo tồn Thiên nhiên Quốc tế (IUCN) đưa con số báo động: Tất cả các loài côn trùng trên hành tinh đang sụt giảm 2,5% mỗi năm. Nếu cứ đà này, Trái Đất có thể không có bất kỳ loài côn trùng nào vào năm 2119; Tháng 9/2019, siêu bão Dorian tấn công Quần đảo Bahamas và Mỹ đã cướp đi sinh mạng của ít nhất 70 người, khiến hơn 200 người mất tích, gây thiệt hại kinh tế lên đến gần 5 tỷ USD.</p>
+
+                    <p>165 năm trước, thủ lĩnh bộ lạc da đỏ Suwamish đã thấu cảm vấn đề mà Trái Đất đang đối mặt ngày nay. Trong bức tâm thư gửi Tổng thống Mỹ Franklin Pierce, ông nói: <strong><em>"Trái Đất là Mẹ thiêng liêng. Và điều gì xảy đến với Trái Đất, sớm muộn cũng sẽ xảy đến với con người..."</em></strong></p>
+
+                    <p>Một cuộc đại tuyệt chủng chỉ trong vài trăm năm nữa - dù chỉ đang nằm trên các số liệu - cũng là điều khiến nhiều vị lãnh đạo các quốc gia, tổ chức lớn bậc nhất trên toàn cầu không thể thờ ơ được nữa.</p>
+
+                    <p>Vì thế, bài viết này cũng không nằm ngoài mục đích tổng kết lại những nguy cơ, thảm họa mà con người đã trải qua, sẽ phải đối mặt trong cả tương lai gần lẫn tương lai xa. Biết, để chúng ta có động lực hơn nữa mà hành động mạnh mẽ hơn nữa, đoàn kết hơn nữa trên phạm vi toàn cầu, vì Đất Mẹ thiêng liêng.</p>
+                </div>
+
+                <div class="w980">
+                    <div class="swiper-container emag-gallery" id="firstGallery">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/tab1/img-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tab1/img-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tab1/img-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tab1/img-4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tab1/img-5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tab1/img-6.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tab1/img-7.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/tab1/img-8.jpg" alt=""></div>
+                        </div>
+                    </div>
+
+                    <ul id="firstGalleryAnchor">
+                        <li class="prev">&#60;</li>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li class="next">&#62;</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="emag-credit w660">
+                <img src="images/credit.png" alt="">
+            </div>
+        </div>
+
+        <div class="emag-section">
+            <div class="emag-cover">
+                <img src="images/tab2/cover.jpg" alt="">
+            </div>
+
+            <div class="emag-content" id="secondWrapper">
+                <div class="w980 emag-selector">
+                    <ul>
+                        <li>
+                            <img src="images/tab2/img-1.jpg" alt="" class="emag-selector--img">
+                            <img src="images/tab2/selector-1.png" alt="" class="emag-selector--text">
+                        </li>
+
+                        <li>
+                            <img src="images/tab2/img-2.jpg" alt="" class="emag-selector--img">
+                            <img src="images/tab2/selector-2.png" alt="" class="emag-selector--text">
+                        </li>
+
+                        <li>
+                            <img src="images/tab2/img-3.jpg" alt="" class="emag-selector--img">
+                            <img src="images/tab2/selector-3.png" alt="" class="emag-selector--text">
+                        </li>
+
+                        <li>
+                            <img src="images/tab2/img-4.jpg" alt="" class="emag-selector--img">
+                            <img src="images/tab2/selector-4.png" alt="" class="emag-selector--text">
+                        </li>
+                    </ul>
+
+                    <p class="emag-caption">Độc giả click vào từng ô để xem nội dung</p>
+                </div>
+
+                <div class="emag-subsection">
+                    <div class="w980 emag-image">
+                        <img src="images/tab2/img-5.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="emag-subsection" hidden="true">2</div>
+
+                <div class="emag-subsection" hidden="true">3</div>
+
+                <div class="emag-subsection" hidden="true">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
