@@ -33,6 +33,7 @@
             }
 
             changeSection('#secondWrapper', '.emag-subsection', '.emag-selector');
+            changeSection('.emag-wrapper', '.emag-section', '.emag-nav');
 
             firstGallery.on('slideChange', function() {
                 var firstGalleryAnchor = $('#firstGalleryAnchor li');
@@ -53,8 +54,15 @@
     </script>
 </head>
 <body>
-    <div class="emag-wrapper" data-section="2">
-        <div class="emag-section" hidden>
+    <div class="emag-wrapper" data-section="3">
+        <ul class="emag-nav">
+            <li class="active">Tứ đại</li>
+            <li>Tứ đại tổn thương</li>
+            <li>Gửi tổng thống mỹ</li>
+            <li>Đại tuyệt chủng</li>
+        </ul>
+
+        <div class="emag-section">
             <div class="emag-cover">
                 <img src="images/tab1/cover.jpg" alt="">
             </div>
@@ -408,7 +416,7 @@
             </div>
         </div>
 
-        <div class="emag-section">
+        <div class="emag-section" hidden>
             <div class="emag-cover" style="margin-bottom: 100px;">
                 <img src="images/tab3/cover.png" alt="">
             </div>
@@ -451,7 +459,7 @@
 
                             <p>Nếu một ngày chúng tôi buộc phải nộp đất cho ông, thì hãy nhớ rằng, chúng tôi đang mất đi phần máu mủ ruột thịt linh thiêng của mình.</p>
 
-                            <p>Từng tia sáng lấp lánh phản chiếu trên mặt hồ kia vẫn đang kể những câu chuyện đời và hành trình ký ức của chúng tôi. Dòng nước ấy vẫn ngày đêm róc rách tiếng thì thầm của cha ông. Dòng sông đây là anh em, họ hàng của chúng tôi, giúp chúng tôi nguôi đi cơn khát, đưa thuyền chúng tôi ra xa và nuôi lớn biết bao thế hệ đã qua. Bởi thế, các ông phải nhớ đối xử tử tế với dòng sông đó như chính người thân ruột thịt của mình.</p>
+                            <p>Từng tia sáng lấp lánh phản chiếu trên mặt hồ kia vẫn đang kể những câu chuyện đời và hành trình ký ức của chúng tôi. Dòng nước ấy vẫn ngày đêm róc rách tiếng thì thầm của cha ông. Dòng sông đây là anh em, họ hàng của chúng tôi, giúp chúng tôi nguôi đi cơn khát, đưa thuyền chúng tôi ra xa và nuôi lớn biết bao thế hệ đã qua. Bởi thế, các ông phải nhớ đối xử tử tế với dòng sông đó như chính người thân ruột thịt của mình.</p>
 
                             <p>Nếu một ngày chúng tôi buộc phải nộp đất cho ông, hãy tạc dạ mà nhớ rằng các ông phải biết trân quý bầu không khí vẫn luôn thổi hồn vào vạn vật mà nó kề bên giống như cái cách mà nó đã kề bên cha ông chúng tôi từ khoảnh khắc cất tiếng khóc chào đời đến giây phút trút đi hơi thở cuối cùng.</p>
 
@@ -461,13 +469,13 @@
                         <div>
                             <p>Các ông có dạy lũ trẻ của mình (điều mà chúng tôi đã dạy những đứa trẻ của chúng tôi) rằng Trái Đất là Mẹ thiêng liêng? Và điều gì xảy đến với Trái Đất, sớm muộn cũng sẽ xảy đến với con người hay không?</p>
 
-                            <p>Hãy luôn ghi lòng tạc dạ rằng: Trái Đất không thuộc về con người, con người mới thuộc về Trái Đất. Vạn vật kết nối tất yếu với nhau trong cùng một khối tựa dòng máu nóng chảy trong huyết quản mang đến cho ta nhịp thở. Con người không kiến tạo nên chiếc tổ sống này, con người chỉ là sợi tơ trong đó mà thôi. Một khi chúng ta gây tác động xấu lên chiếc tổ ấy, chúng ta sẽ phải nhận lại trái đắng.</p>
+                            <p>Hãy luôn ghi lòng tạc dạ rằng: Trái Đất không thuộc về con người, con người mới thuộc về Trái Đất. Vạn vật kết nối tất yếu với nhau trong cùng một khối tựa dòng máu nóng chảy trong huyết quản mang đến cho ta nhịp thở. Con người không kiến tạo nên chiếc tổ sống này, con người chỉ là sợi tơ trong đó mà thôi. Một khi chúng ta gây tác động xấu lên chiếc tổ ấy, chúng ta sẽ phải nhận lại trái đắng.</p>
 
-                            <p>Dẫu định mệnh của các ông vẫn là một bí ẩn với chúng tôi.</p>
+                            <p>Dẫu định mệnh của các ông vẫn là một bí ẩn với chúng tôi.</p>
 
                             <p>Nhưng...</p>
 
-                            <p>Điều gì sẽ xảy ra khi từng đàn trâu cứ thế bị tàn sát? Từng đàn ngựa hoang kiêu hãnh bị thuần hóa? Điều gì sẽ xảy ra khi những góc rừng vốn yên ắng bỗng nặng mùi con người? Hay những gò đồi chín vàng thơ mộng bị vấy bẩn bởi đường dây vô tuyến? Những cánh rừng sẽ ra sao? Biến mất! Cánh chim đại bàng sẽ nơi nao? Biến mất! Tất cả rồi sẽ biến mất!</p>
+                            <p>Điều gì sẽ xảy ra khi từng đàn trâu cứ thế bị tàn sát? Từng đàn ngựa hoang kiêu hãnh bị thuần hóa? Điều gì sẽ xảy ra khi những góc rừng vốn yên ắng bỗng nặng mùi con người? Hay những gò đồi chín vàng thơ mộng bị vấy bẩn bởi đường dây vô tuyến? Những cánh rừng sẽ ra sao? Biến mất! Cánh chim đại bàng sẽ nơi nao? Biến mất! Tất cả rồi sẽ biến mất!</p>
                             
                             <p>Còn lại gì sau những chuyện tồi tệ xảy ra với những sinh linh bé nhỏ ấy? Chẳng còn gì ngoại trừ việc chúng ta kết thúc những ngày "sống" đáng quý và bắt đầu chuỗi ngày "sinh tồn" cực khổ.</p>
 
@@ -491,6 +499,226 @@
 
             <div class="emag-credit w660">
                 <img src="images/tab3/credit.png" alt="">
+            </div>
+        </div>
+
+        <div class="emag-section" hidden>
+            <div class="emag-cover">
+                <img src="images/tab4/cover.jpg" alt="">
+            </div>
+
+            <div class="emag-content">
+                <div class="w660">
+                    <p>Tháng 11/2019, Từ điển tiếng Anh Oxford (Oxford English Dictionary) đã lựa chọn cụm từ "Climate emergency" là 'Từ của Năm 2019'. Oxford định nghĩa "Climate emergency - Khẩn cấp khí hậu" là một tình huống trong đó cần phải có hành động khẩn cấp để giảm hoặc ngăn chặn biến đổi khí hậu và tránh các thiệt hại tiềm ẩn từ môi trường.</p>
+
+                    <p>Cũng trong năm 2019, Oxford English Dictionary cho biết, từ 'khí hậu' đã trở thành từ phổ biến nhất liên quan đến tình trạng khẩn cấp, khủng hoảng. Nó phổ biến gấp 3 lần so với cụm từ 'khẩn cấp sức khỏe' do người dùng tìm hiểu.</p>
+
+                    <p>Vậy các thuật ngữ 'biến đổi khí hậu', 'nóng lên toàn cầu', ' khủng hoảng khí hậu', 'hủy diệt sinh học/sóng thần tuyệt chủng' tuy khác nhau nhưng có mối liên hệ với nhau như thế nào trong bối cảnh khi mất đa dạng sinh học là một trong những vấn đề môi trường toàn cầu nghiêm trọng nhất do con người gây ra? Hàng trăm, hàng triệu loài và vô số quần thể đang bị tuyệt chủng và có nguy cơ tuyệt chủng hàng năm.</p>
+
+                    <p>Dưới góc nhìn của niên đại địa chất, quần thể sinh học đa dạng nhất, giàu có nhất Trái Đất đang rơi vào cuộc tuyệt chủng lần thứ 6...</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-1.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Trước khi hiểu rõ biến đổi khí hậu là gì, cần làm rõ hai khái niệm 'khí hậu' và 'thời tiết'. Nếu như thời tiết là tập hợp các yếu tố khí tượng như nhiệt độ, độ ẩm, áp suất khí quyển tại một khu vực cụ thể trong một khoảng thời điểm ngắn hạn cụ thể (vài giờ, vài ngày) - thì khí hậu phản ánh thời tiết trung bình lâu dài (mỗi 10 năm hoặc nhiều hơn) tại một khu vực.</p>
+
+                    <p>Khái niệm biến đổi khí hậu mang tầm vĩ mô hơn. Biến đổi khí hậu Trái Đất là sự thay đổi dài hạn của hệ thống khí hậu hành tinh (gồm khí quyển, sinh quyển, thủy quyển và băng quyển) trong thời gian từ thập kỷ, thế kỷ đến thiên niên kỷ.</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-2.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Cơ quan Quản lý Khí quyển và Đại dương Quốc gia Mỹ (NOAA) định nghĩa: Nóng lên toàn cầu là sự gia tăng nhiệt độ trung bình của bề mặt Trái Đất, gồm bầu không khí, mặt đất và đại dương.</p>
+                </div>
+
+                <div class="w980 emag-image">
+                    <img src="images/tab4/img-1.jpg" alt="">
+                    <p class="emag-caption">Nóng lên toàn cầu (Global Warming) là một trong những vấn đề toàn cầu con người đang phải đối mặt. Photo: Sshazra.blogspot.com</p>
+                </div>
+
+                <div class="w660">
+                    <p>Khí hậu Trái Đất có nhiều biến động trong suốt chiều dài lịch sử. Chỉ trong 650.000 năm qua, đã có 7 chu kỳ xuất hiện và kết thúc băng hà. Với sự kết thúc đột ngột của kỷ băng hà gần đây nhất cách đây 7.000 năm trước đã đánh dấu sự khởi đầu của kỷ nguyên khí hậu hiện đại cùng nền văn minh tiên tiến của nhân loại.</p>
+
+                    <p>Xu hướng nóng lên toàn cầu hiện nay có ý nghĩa đặc biệt vì 95% nguyên nhân của nó là hệ quả từ các hoạt động của con người từ giữa thế kỷ 20 đến nay, với tốc độ chưa từng thấy trong nhiều thập kỷ.</p>
+
+                    <p>Từ những bằng chứng cổ xưa tìm thấy trong các vòng cây, trầm tích đại dương, rạn san hô và các lớp đá trầm tích, các nhà khoa học nhận định: Sự nóng lên toàn cầu hiện tại đang diễn ra nhanh gấp 10 lần so với tốc độ trung bình của sự nóng lên trong thời kỳ băng hà.</p>
+
+                    <p>Sự nóng lên toàn cầu thời hiện đại diễn ra ở việc nhiệt độ tại mặt đất, đại dương và khí quyển đều tăng với các biểu hiện:</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-3.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Nhiệt độ bề mặt trung bình của Trái Đất đã tăng khoảng 0,9 độ C kể từ cuối thế kỷ 19 do lượng khí CO2 và khí thải nhân tạo khác ngày càng nhiều trong bầu khí quyển. Sự nóng lên toàn cầu rõ rệt nhất diễn ra trong khoảng 35 năm vừa qua.</p>
+
+                    <p>Theo dữ liệu của Cơ quan Hàng không và Vũ trụ Mỹ (NASA), 5 trong số những năm ấm kỷ lục trong lịch sử đã xảy ra kể từ năm 2010 đến nay, trong đó, năm 2019 được giới khoa học dự báo là năm nóng nhất trong lịch sử.</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-4.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Cùng với sự nóng lên toàn cầu, đại dương cũng bị hấp thụ lượng nhiệt khổng lồ. Năm 2018 ghi nhận là năm đại dương hấp thụ mức nhiệt lớn nhất trong lịch sử.</p>
+
+                    <p>Các nhà khoa học đo được lượng nhiệt ở 700 mét so với mặt nước biển đã tăng lên âm 17,5 độ C tính từ năm 1969.</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-5.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Các dải băng ở Greenland (Đan Mạch) và Nam Cực đã giảm về khối lượng. Dữ liệu của NASA cho thấy Greenland đã mất trung bình 286 tỷ tấn băng mỗi năm từ năm 1993 đến năm 2016, trong khi Nam Cực mất khoảng 127 tỷ tấn băng mỗi năm trong cùng khoảng thời gian. Tỷ lệ mất khối lượng băng ở Nam Cực đã tăng gấp 3 lần trong thập kỷ qua.</p>
+
+                    <p>Băng tại Bắc Cực cũng đang suy giảm nhanh chóng về cả phạm vi và độ dày của băng trong vài thập kỷ qua.</p>
+
+                    <p>Không những thế, các sông băng cũng đang hẹp dần ở khắp mọi nơi trên thế giới, ở các dãy núi Alps, Himalaya, Andes, Rocky, Alaska và ở châu Phi.</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-6.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Quan sát vệ tinh NASA cho thấy lượng tuyết phủ mùa Xuân ở Bắc bán cầu đã giảm trong 5 thập kỷ qua và tuyết đang tan sớm hơn so với các năm trước.</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-7.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Mực nước biển toàn cầu tăng khoảng 20 cm trong thế kỷ trước. Tuy nhiên, tốc độ nước biển dâng trong 2 thập kỷ qua đã gấp 2 lần so với thế kỷ 20. Đặc biệt, xu hướng này vẫn không giảm trong các năm tới.</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-8.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Bão mạnh, siêu bão, sóng nhiệt kỷ lục, chênh lệch nhiệt độ (nóng-lạnh) ở các khu vực trên thế giới... ngày một rõ rệt với tần suất nhiều hơn.</p>
+
+                    <p>Trước sự nóng lên nhanh chóng của khí quyển xảy ra từ đầu thế kỷ 21, một sự kiện El Nino mạnh từ năm 1997 đến năm 1998 đã cướp đi 24.000 sinh mạng trên toàn cầu, gây thiệt hại kinh tế lên đến 34 tỷ USD, gây quá tải cho các tổ chức viện trợ quốc tế trong việc ứng phó với hạn hán, lũ lụt và hỏa hoạn ở Nam Mỹ, châu Phi và Đông Nam Á, Cơ quan Phát triển Quốc tế Mỹ (USAID) thông tin.</p>
+                </div>
+
+                <div class="w660 emag-title">
+                    <img src="images/tab4/subtitle-9.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Kể từ khi bắt đầu cuộc cách mạng công nghiệp hồi thế kỷ 18, nồng độ axit của bề mặt đại dương đã tăng khoảng 30%. Sự gia tăng này là hệ quả từ việc con người thải ra nhiều CO2 vào khí quyển, khiến đại dương hấp thụ nhiều hơn. Khi đó, các phản ứng hóa học xảy ra làm giảm pH nước biển. Lượng CO2 được hấp thụ bởi bề mặt nước đại dương đang tăng khoảng 2 tỷ tấn mỗi năm.</p>
+
+                    <p>Dự báo, vào cuối thế kỷ này, nước bề mặt của đại dương có thể có mức độ axit cao hơn gần 150%, dẫn đến độ pH cao chưa từng có trong hơn 20 triệu năm qua.</p>
+                </div>
+
+                <div class="w980 emag-title">
+                    <img src="images/tab4/subtitle-10.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Để chỉ ra sự khác biệt giữa biến đổi khí hậu và nóng lên toàn cầu, NOAA cung cấp các đặc điểm:</p>
+
+                    <p>Sự nóng lên toàn cầu chỉ liên quan đến sự gia tăng của nhiệt độ bề mặt Trái Đất, trong khi biến đổi khí hậu bao hàm cả sự nóng lên toàn cầu và hệ quả của việc nóng lên toàn cầu đó, gồm sông băng tan chảy, mưa bão dữ dội hơn, hạn hán thường xuyên hơn... Nói cách khác, nóng lên toàn cầu là một trong những triệu chứng của biến đổi khí hậu (biến đổi nhiệt độ).</p>
+
+                    <p>Một điểm khác biệt nữa giữa hai thuật ngữ này là: Nguyên nhân của sự nóng lên toàn cầu chủ yếu gây ra bởi các hoạt động của con người, như việc gia tăng các hoạt động tạo ra các chất thải khí nhà kính (CO2, CH4, N2O, O3, các khí CFC...) từ việc đốt nhiên liệu hóa thạch.</p>
+                </div>
+
+                <div class="w980 emag-image">
+                    <img src="images/tab4/img-2.jpg" alt="">
+                    <p class="emag-caption">1,5 độ C là mức nhiệt chúng ta phải giữ cho Trái Đất không quá nóng lên trước khi quá muộn. Ảnh chụp ngày 20/09/2019 tại Bonn, Đức. Photo: Mika Baumeister / Unsplash </p>
+                </div>
+
+                <div class="w660">
+                    <p>Còn nguyên nhân dẫn đến biến đổi khí hậu bao gồm cả nhân tạo và tự nhiên. Các yếu tố tự nhiên dẫn đến biến đổi khí hậu bao gồm: Kiến tạo mảng, hoạt động núi lửa, dạo động ở đại dương, độ lệch quỹ đạo Trái Đất, biến đổu bức xạ Mặt Trời. Trong khi đó, biến đổi khí hậu nhân tạo đến từ các hoạt động sống, sản xuất công nghiệp, giao thông của con người. Việc gia tăng khí nhà kính ra bầu khí quyển từ quá trình đốt nhiên liệu hóa thạch, đốt rừng, gia súc... tạo ra nhiều hơn 100-300 lần số lượng khí CO2 phát ra từ núi lửa, USGS cho biết.</p>
+
+                    <p>Sự nóng lên toàn cầu hiện nay cũng khác với sự nóng lên trong quá khứ. Sự gia tăng nhiệt độ trung bình toàn cầu hiện nay đang xảy ra nhanh hơn nhiều so với bất kỳ thời điểm nào kể từ khi nền văn minh và nông nghiệp hiện đại phát triển trong 11.000 năm qua. Thậm chí, nó còn diễn biến nhanh hơn so với bất kỳ giai đoạn gian băng nào trong hàng triệu năm qua.</p>
+
+                    <p>Gian băng là một thời kỳ nhiệt độ trung bình của Trái Đất ấm hơn làm tan băng ở các vùng cực. Gian băng xen kẽ với các thời kỳ băng hà trong một kỷ băng hà.</p>
+                </div>
+
+                <div class="w980 emag-title">
+                    <img src="images/tab4/subtitle-11.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Ngày 9/1/2019, Quốc hội Mỹ khóa 116 thành lập ủy ban đặc biệt về khủng hoảng khí hậu có tên House Select Committee on the Climate Crisis, gồm các chuyên gia về môi trường, lũ lụt ven biển, phát triển năng lượng sạch để thực hiện nhiệm vụ đưa ra các khuyến nghị chính sách cho Quốc hội Mỹ nhằm giảm thiểu đáng kể và lâu dài mức độ ô nhiễm cũng như các hoạt động góp phần gây khủng hoảng khí hậu.</p>
+
+                    <p>Thuật ngữ 'khủng hoảng khí hậu' xuất hiện lần đầu tiên vào những năm 1980 do cựu Phó tổng thống Mỹ Al Gore (dưới thời Tổng thống Bill Clinton) sử dụng, sau đó được sử dụng chính thức hóa bởi Liên minh Khủng hoảng Khí hậu (CCC) năm 2004.</p>
+
+                    <p>Vào cuối năm 2010, cụm từ 'khủng hoảng khí hậu' nổi lên như một thuật ngữ được đông đảo các cá nhân, tổ chức, tờ báo nổi tiếng như Green New Deal (Mỹ), tờ The Guardian (Anh), nhà hoạt động môi trường người Thụy Điển Greta Thunberg và thành viên của Đảng Dân chủ Mỹ Kamala Harris...</p>
+
+                    <p>Giữa năm 2019, tổ chức phi lợi nhuận Climate Reality Project do ông Al Gore thành lập đã kiến nghị các tổ chức thông tấn sử dụng thuật ngữ 'khủng hoảng khí hậu' thay cho 'biến đổi khí hậu' hoặc 'nóng lên toàn cầu'.</p>
+
+                    <p>Tháng 6/2019, 70 nhà hoạt động khí hậu Mỹ đã tập trung bên ngoài tòa soạn của tờ The New York Times nhằm kêu gọi tờ báo này sử dụng cụm từ "Climate emergency - Khẩn cấp khí hậu" hoặc "Climate crisis - Khủng khoảng khí hậu".</p>
+
+                    <p>Tháng 9/2019, Tổng thư ký Liên Hợp Quốc António Guterres cũng sử dụng thuật ngữ này khi nói về mối đe dọa hiện sinh trực tiếp. Giáo sư, nhà khoa học khí hậu người Đức Hans Joachim Schellnhuber, nguyên cố vấn của Thủ tướng Đức Angela Merkel cũng sử dụng thuật ngữ 'khủng hoảng khí hậu' để nói về những vấn đề nghiêm trọng mà con người phải đối mặt, The Guardian thông tin.</p>
+
+                    <p>Hiểu đơn giản, khủng hoảng khí hậu được dùng để mô tả mối đe dọa của nóng lên toàn cầu, biến đổi khí hậu đối với hành tinh Trái Đất; đồng thời đặt ra yêu cầu các quốc gia phải có hành động khẩn cấp để giảm hoặc ngăn chặn biến đổi khí hậu và hệ quả của nó.</p>
+
+                    <p>Nhiều nhà hoạt động môi trường tin rằng, việc sử dụng thuật ngữ 'khủng hoảng khí hậu' có tác động mạnh mẽ hơn 'biến đổi khí hậu'.</p>
+                </div>
+
+                <div class="w980 emag-title">
+                    <img src="images/tab4/subtitle-12.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Hủy diệt sinh học (Biological annihilation) hay Sóng thần tuyệt chủng (Extinction tsunami) là những cụm từ xuất hiện trên tạp chí của Viện Hàn lâm Khoa học Quốc gia Mỹ để nhấn mạnh đến vấn đề nghiêm trọng của nhân loại khi phải đối mặt với sự kiện tuyệt chủng hàng loạt lần thứ sáu đang diễn ra trước sự sụt giảm nghiêm trọng của loài.</p>
+
+                    <p>Liên minh Bảo tồn Thiên nhiên Quốc tế (IUCN) cho biết, số lượng các loài trên Trái Đất đang bước vào giai đoạn sụt giảm khổng lồ. Sự tuyệt chủng này sẽ dẫn đến hậu quả tiêu cực đối với hoạt động của hệ sinh thái và các thành tố quan trọng duy trì nền văn minh. Giới khoa học gọi sự kiện này là Hủy diệt sinh học hay Sóng thần tuyệt chủng để nhấn mạnh mức độ nghiêm trọng của sự kiện tuyệt chủng lần thứ 6 đang diễn ra.</p>
+
+                    <p>Minh chứng là: Trong 177 loài động vật có vú thì 30% đã tuyệt chủng, hơn 40% đang suy giảm số lượng nghiêm trọng; Gần 200 loài động vật có xương sống đã tuyệt chủng chỉ trong 100 năm qua (trung bình cứ 1 năm có 2 loài tuyệt chủng); 42% trong số 3.623 loài động vật không xương sống trên cạn và 25% trong số 1.306 loài động vật không xương sống biển hiện nay đang nằm trong Sách Đỏ của IUCN, xếp vào nhóm bị đe dọa tuyệt chủng.</p>
+
+                    <p>Khoảng 40% các loài côn trùng trên thế giới đang suy giảm. Một nghiên cứu năm 2019 cho thấy tổng khối lượng của tất cả các loài côn trùng trên hành tinh đang giảm 2,5% mỗi năm. Nếu xu hướng đó tiếp tục gia tăng, Trái Đất có thể không có bất kỳ loài côn trùng nào vào năm 2119.</p>
+
+                    <p>Từ những con số đáng báo động đó, giới nghiên cứu nhận định, tốc độ tuyệt chủng hiện nay nhanh gấp 4.000 lần so với thời kỳ khủng long!</p>
+                </div>
+
+                <div class="w980 emag-image">
+                    <img src="images/tab4/img-3.png" alt="">
+                </div>
+
+                <div class="w660">
+                    <p>Gần đây nhất, vào đầu tháng 5/2019, Liên Hợp Quốc công bố bản báo cáo dày 1.800 trang do IPBES thực hiện, đưa ra thực trạng đa dạng sinh học hành tinh. [IPBES là Diễn đàn Khoa học liên chính phủ về đa dạng sinh học và các dịch vụ hệ sinh thái, do Liên Hợp Quốc thành lập].</p>
+
+                    <p>IPBES đưa ra thực trạng nghiêm trọng: Thiên nhiên đang suy giảm trên toàn cầu với tốc độ chưa từng có trong lịch sử loài người - và tốc độ tuyệt chủng loài đang gia tăng, với những tác động nghiêm trọng đến con người trên khắp thế giới hiện nay.</p>
+
+                    <p>"Sức khỏe của các hệ sinh thái mà chúng ta và tất cả các loài khác phụ thuộc đang xấu đi nhanh hơn bao giờ hết. Chúng ta đang làm xói mòn nền tảng của nền kinh tế, sinh kế, an ninh lương thực, sức khỏe và chất lượng cuộc sống trên toàn thế giới." - Chủ tịch IPBES Sir Robert Watson nói.</p>
+
+                    <p>IPBES liệt kê những con số khổng lồ:</p>
+
+                    <div class="emag-image">
+                        <img src="images/tab4/img-4.jpg" alt="">
+                    </div>
+
+                    <p>Xu hướng tiêu cực trong tự nhiên sẽ tiếp tục đến năm 2050 và hơn thế nữa trong tất cả các kịch bản chính sách được đưa ra trong báo cáo của IPBES. Các hệ sinh thái, các loài, quần thể hoang dã, các giống và loài động-thực vật được thuần hóa đang bị thu hẹp và biến mất. Mạng lưới sự sống thiết yếu trên Trái Đất đang ngày càng nhỏ hơn. Mất mát này là hệ quả trực tiếp từ hoạt động của con người, gây nên mối đe dọa trực tiếp đến hạnh phúc của nhân loại ở khắp mọi nơi trên thế giới.</p>
+
+                    <p>Báo cáo IPBES xếp hạng 5 thủ phạm (theo thứ tự giảm dần) gây tác động toàn cầu cho quá trình hủy diệt sinh học lớn nhất từ trước đến nay, gồm: (1) Con người xâm lấn đất và biển; (2) Khai thác trực tiếp sinh vật; (3) Biến đổi khí hậu; (4) Ô nhiễm; (5) Các loài ngoại lai xâm lấn.</p>
+
+                    <p>Các yếu tố gián tiếp chính gây hủy diệt sinh học quy mô toàn cầu bao gồm: Tăng dân số và tiêu dùng bình quân đầu người; đổi mới công nghệ; khai thác và sản xuất tài nguyên quá mức.</p>
+
+                    <p>Báo cáo cũng cho chúng ta biết rằng vẫn chưa quá muộn để tạo ra sự khác biệt, nhưng chỉ khi chúng ta bắt đầu ngay bây giờ ở mọi cấp độ từ địa phương đến toàn cầu. Qua đó, thiên nhiên vẫn có thể được bảo tồn, phục hồi và sử dụng bền vững - đây cũng là chìa khóa để đáp ứng hầu hết các mục tiêu toàn cầu khác.</p>
+
+                    <p>Bản báo cáo liên chính phủ đầu tiên về đa dạng sinh học của IPBES là kết quả lao động miệt mài từ 145 tác giả chuyên gia từ 50 quốc gia trong 3 năm. Báo cáo dài 1.800 trang tổng hợp nghiên cứu từ hơn 15.000 bài báo học thuật và các ấn phẩm nghiên cứu, đánh giá những thay đổi trong 5 thập kỷ qua, cung cấp bức tranh toàn diện về mối quan hệ giữa con đường phát triển kinh tế và tác động của chúng đối với tự nhiên. Báo cáo cũng cung cấp một loạt các kịch bản có thể trong những thập kỷ tới.</p>
+
+                    <p>Một lần nữa, biến đổi khí hậu nhân tạo, nóng lên toàn cầu đang khiến sinh vật mất cân bằng sinh thái, con người chịu nhiều tang thương hơn vì thiên tai, thảm họa tự nhiên. Đại dương nóng, phá rừng và biến đổi khí hậu đang tấn công hệ động-thực vật trên toàn cầu khiến số lượng loài giảm xuống ở quy mô chưa từng có.</p>
+
+                    <p>Nếu không có những hành động khẩn cấp, chính con người sẽ phải hứng chịu những thảm họa to lớn từ việc Trái Đất và sinh vật của nó bị tổn thương.</p>
+
+                    <p><strong><em>"Còn lại gì sau những chuyện tồi tệ xảy ra với những sinh linh bé nhỏ ấy? Chẳng còn gì ngoại trừ việc chúng ta kết thúc những ngày "sống" đáng quý và bắt đầu chuỗi ngày "sinh tồn" cực khổ"...</em></strong></p>
+                </div>
+            </div>
+
+            <div class="emag-credit w660">
+                <img src="images/credit.png" alt="">
             </div>
         </div>
     </div>
