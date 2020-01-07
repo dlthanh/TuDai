@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+strong {
+    font-weight: 700;
+}
+em {
+    font-style: italic;
+}
+
+/* Wrapper */
+.emag-wrapper {
+    padding-bottom: 60px;
+}
+.emag-wrapper[data-section="0"] {
+    background-color: #000;
+    color: #adadad;
+}
+.emag-wrapper[data-section="1"] {
+    background-color: #000;
+    color: #7e7e7e;
+}
+
+/* Cover */
+.emag-cover {
+    margin-bottom: 60px;
+}
+.emag-cover img {
+    width: 100%;
+}
+
+/* Content */
+.emag-content {
+    margin-top: 60px;
+}
+.emag-content p {
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+.emag-content img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.emag-image {
+    margin-bottom: 30px;
+}
+.emag-image img {
+    width: 100%;
+    margin-bottom: 0;
+}
+p.emag-caption {
+    font-family: 'Myriad', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+/* Credit */
+.emag-credit {
+    margin-top: 30px;
+}
+.emag-credit img {
+    width: 100%;
+}
+
+/* Navbar */
+.emag-nav {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 60px;
+}
+.emag-nav li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    background-color: #fcc10c;
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.emag-nav li.active {
+    background-color: #000;
+    color: #fff;
+}

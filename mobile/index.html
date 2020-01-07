@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function changeSection(wrapper, children, navigator) {
+                $(navigator + ' li').click(function() {
+                    var activeIndex;
+                
+                    activeIndex = $(this).index();
+                    $(navigator).find('li').removeClass('active');
+                    $(this).addClass('active');
+                    $(wrapper).attr('data-section', activeIndex);
+                    $('.emag-content ' + children).attr('hidden', 'true');
+                    $('.emag-cover ' + children).attr('hidden', 'true');
+                    $('.emag-content ' + children).eq(activeIndex).removeAttr('hidden');
+                    $('.emag-cover ' + children).eq(activeIndex).removeAttr('hidden');
+                })
+            }
+
+            changeSection('.emag-wrapper', '.emag-section', '.emag-nav');
+        })
+    </script>
+</head>
+<body>
+    <div class="emag-wrapper" data-section="0">
+        <div class="emag-cover">
+            <div class="emag-section">
+                <img src="images/tab1/cover.jpg" alt="">
+            </div>
+
+            <div class="emag-section" hidden>
+                <img src="images/tab2/cover.jpg" alt="">
+            </div>
+            
+            <div class="emag-section" hidden>
+                <img src="images/tab3/cover.jpg" alt="">
+            </div>
+
+            <div class="emag-section" hidden>
+                <img src="images/tab4/cover.jpg" alt="">
+            </div>
+        </div>
+
+        <ul class="emag-nav">
+            <li class="active">Tứ đại</li>
+            <li>Tứ đại tổn thương</li>
+            <li>Gửi tổng thống mỹ</li>
+            <li>Đại tuyệt chủng</li>
+        </ul>
+
+        <div class="emag-content">
+            <div class="emag-section">
+                <p><strong><em>Trái Đất từng rất xinh đẹp của chúng ta đang quay những vòng quay cuối cùng khép lại năm 2019 chuyển sang năm 2020 trong một trạng thái bất ổn ngày càng gia tăng. Hàng loạt hiện tượng thời tiết cực đoan và thảm họa tự nhiên, biểu hiện rõ nét của biến đổi khí hậu, đã xảy ra trong năm 2019 và xác lập nhiều kỷ lục chưa từng có.</em></strong></p>
+
+                <p>Nói một cách hình ảnh, Trái Đất giống như một cơ thể Tứ Đại. Tứ Đại là 4 nguyên tố <strong>Nước, Khí, Đất, Lửa</strong> hình thành nên Trái Đất, tạo nên vạn vật - theo quan niệm của cả triết học cổ đại phương Đông và phương Tây. Trong cơ thể đó, Nước là nhựa sống chảy trong cơ thể sinh vật; Nhờ Khí, sinh vật hô hấp để duy trì sự sống; Còn Đất là vật chất, là hình hài tự nhiên; Phải cần đến Lửa để sinh vật xây dựng, duy trì và lan truyền năng lượng.</p>
+
+                <p>Và cơ thể Tứ Đại của Trái Đất đang lâm bệnh, với rất nhiều vết thương lớn.</p>
+
+                <p>Nửa đầu năm 2019, Amazon - rừng mưa nhiệt đới lớn nhất hành tinh - phải hứng chịu hơn 40.000 trận cháy dữ dội; Liên minh Bảo tồn Thiên nhiên Quốc tế (IUCN) đưa con số báo động: Tất cả các loài côn trùng trên hành tinh đang sụt giảm 2,5% mỗi năm. Nếu cứ đà này, Trái Đất có thể không có bất kỳ loài côn trùng nào vào năm 2119; Tháng 9/2019, siêu bão Dorian tấn công Quần đảo Bahamas và Mỹ đã cướp đi sinh mạng của ít nhất 70 người, khiến hơn 200 người mất tích, gây thiệt hại kinh tế lên đến gần 5 tỷ USD.</p>
+
+                <p>165 năm trước, thủ lĩnh bộ lạc da đỏ Suwamish đã thấu cảm vấn đề mà Trái Đất đang đối mặt ngày nay. Trong bức tâm thư gửi Tổng thống Mỹ Franklin Pierce, ông nói: <strong><em>"Trái Đất là Mẹ thiêng liêng. Và điều gì xảy đến với Trái Đất, sớm muộn cũng sẽ xảy đến với con người..."</em></strong></p>
+
+                <p>Một cuộc đại tuyệt chủng chỉ trong vài trăm năm nữa - dù chỉ đang nằm trên các số liệu - cũng là điều khiến nhiều vị lãnh đạo các quốc gia, tổ chức lớn bậc nhất trên toàn cầu không thể thờ ơ được nữa.</p>
+
+                <p>Vì thế, bài viết này cũng không nằm ngoài mục đích tổng kết lại những nguy cơ, thảm họa mà con người đã trải qua, sẽ phải đối mặt trong cả tương lai gần lẫn tương lai xa. Biết, để chúng ta có động lực hơn nữa mà hành động mạnh mẽ hơn nữa, đoàn kết hơn nữa trên phạm vi toàn cầu, vì Đất Mẹ thiêng liêng.</p>
+
+                <img src="images/tab1/img-1.png" alt="">
+
+                <img src="images/tab1/img-2.png" alt="">
+
+                <img src="images/tab1/img-3.png" alt="">
+
+                <img src="images/tab1/img-4.png" alt="">
+
+                <img src="images/tab1/img-5.png" alt="">
+
+                <img src="images/tab1/img-6.png" alt="">
+
+                <img src="images/tab1/img-7.png" alt="">
+
+                <img src="images/tab1/img-8.png" alt="">
+
+                <div class="emag-credit">
+                    <img src="images/credit.png" alt="">
+                </div>
+            </div>
+
+            <div class="emag-section" hidden>
+                <div class="emag-image">
+                    <img src="images/tab2/img-1.jpg" alt="">
+                    <p class="emag-caption">Lửa là một trong những phát minh đầu tiên, quan trọng nhất của con người. Photo: Maxim Tajer / Unsplash</p>
+                </div>
+
+                <p>Lửa tồn tại trước chúng ta hàng trăm triệu năm. Lửa được sử dụng để sưởi ấm, xua đuổi thú hoang và làm chín thức ăn, tạo bước ngoặt thay đổi cuộc sống con người. Có thể nói, lửa là cuộc cách mạng đầu tiên trong lịch sử nhân loại.</p>
+
+                <p>Cùng với các công cụ bằng đá, việc sử dụng lửa có kiểm soát là mắt xích quan trọng nhất trong quá trình tiến hóa của loài người.</p>
+
+                <p>Cùng với nhu cầu sử dụng lửa của con người trong các ngành nông nghiệp, công nghiệp, lâm nghiệp... là sự tăng trưởng dân số, làm bùng phát các nhu cầu như sưởi ấm, đốt rác thải, đốt rừng. đốt nhiên liệu hóa thạch...</p>
+
+                <div class="emag-image">
+                    <img src="images/tab2/img-2.jpg" alt="">
+                    <p class="emag-caption">Một góc bếp ở São Francisco de Paula, Brazil. Photo: Jaime Spaniol / Unsplash</p>
+                </div>
+
+                <p>Hệ quả của việc sử dụng lửa không kiểm soát là ô nhiễm không khí (từ hoạt động sưởi ấm, đốt rừng...), hỏa hoạn gây chết người và động-thực vật.</p>
+
+                <p>Trong quá trình cháy rừng, tốc độ phát thải khí CO2 ra bầu khí quyển Trái Đất đạt mức cao nhất trong lịch sử. Lượng khí thải carbon từ các đám cháy rừng khổng lồ khắp thế giới này chiếm từ 13% đến 40% lượng phát thải trung bình hàng năm trên toàn cầu từ việc đốt nhiên liệu hóa thạch (ví dụ dầu mỏ, khí đốt tự nhiên và than đá...). Năm 2002, Cơ quan Năng lượng Quốc tế (IEA) tuyên bố rằng gần 80% năng lượng của thế giới đến từ các nguồn này.</p>
+
+                <p>Chưa rừng ở đó, ảnh hưởng của các vụ cháy rừng lớn này đối với đa dạng sinh học và các tài nguyên thiên nhiên khác tiếp tục là vấn đề nhức nhối khiến các nhà sinh học lo lắng.</p>
+
+                <p>Vụ hỏa hoạn lớn năm 1988 tại Công viên quốc gia Yellowstone (Mỹ) đã đánh dấu một mốc quan trọng trong lịch sử hỏa hoạn gần đây. Vụ cháy kéo dài hơn 3 tháng và tiêu tốn hơn 1.400.000 ha rừng. Bất chấp mọi nỗ lực dập tắt các đám cháy, vụ hỏa hoạn ở Công viên quốc gia Yellowstone chỉ dừng khi tuyết bắt đầu rơi vào giữa tháng 9.</p>
+
+                <div class="emag-image">
+                    <img src="images/tab2/img-3.jpg" alt="">
+                    <p class="emag-caption">Một vụ cháy rừng tại núi Santa Cruz, bang California, Mỹ năm 2008. Photo: Frans Lanting / National Geographic Collection </p>
+                </div>
+
+                <p>Năm 2019, thế giới chứng kiến phần diện tích rừng Amazon ở Brazil cháy khốc liệt. Dù là nguyên nhân chủ quan hay khách quan thì thứ còn lại sau biển lửa hung tàn ấy là nỗi mất mát khó có thể bù đắp của các loài sinh vật và cả con người sống dựa vào rừng hàng trăm năm qua.</p>
+
+                <p>Chỉ riêng Amazon, trong 50 năm qua, 17% diện tích của khu rừng nhiệt đới lớn nhất thế giới đã vĩnh viễn biến mất.</p>
+
+                <p>Thật khó tưởng tượng ở một thế giới không có lửa, khi đó, Trái Đất sẽ như một tinh cầu lạnh giá, dù cho có Mặt Trời sưởi ấm ban ngày.</p>
+
+                <p>Trong suốt chiều dài của lịch sử Trái Đất, lửa là yếu tố không thể thiếu đổi với sự tiến hóa của hệ thực vật và động vật. Nhưng ở thời ngày nay, dưới sự xuất hiện của con người, chúng ta đang sử dụng lửa quá mức cho phép, khiến hành tinh ngày một ô nhiễm, mất đi vẻ đẹp hoang sơ vốn có của nó.</p>
+
+                <div class="emag-credit">
+                    <img src="images/credit.png" alt="">
+                </div>
+            </div>
+
+            <div class="emag-section" hidden></div>
+
+            <div class="emag-section" hidden></div>
+        </div>
+    </div>
+</body>
+</html>
