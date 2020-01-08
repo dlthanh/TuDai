@@ -16,10 +16,14 @@
             var firstGallery = new Swiper('#firstGallery', {
                 speed: 600,
                 autoHeight: true,
-                effect: 'fade'
+                effect: 'fade',
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             })
 
-            function changeSection(wrapper, children, navigator) {
+            function changeSection(wrapper, children, navigator, scrollTop) {
                 $(navigator + ' li').click(function() {
                     var activeIndex;
                 
@@ -30,12 +34,14 @@
                     $(children).attr('hidden', 'true');
                     $(children).eq(activeIndex).removeAttr('hidden');
 
-                    $(window).scrollTop(0);
+                    if(scrollTop == true) {
+                        $(window).scrollTop(0);
+                    }
                 })
             }
 
-            changeSection('#secondWrapper', '.emag-subsection', '.emag-selector');
-            changeSection('.emag-wrapper', '.emag-section', '.emag-nav');
+            changeSection('#secondWrapper', '.emag-subsection', '.emag-selector', false);
+            changeSection('.emag-wrapper', '.emag-section', '.emag-nav', true);
 
             firstGallery.on('slideChange', function() {
                 var firstGalleryAnchor = $('#firstGalleryAnchor li');
@@ -71,9 +77,9 @@
 
             <div class="emag-content">
                 <div class="w660">
-                    <p><strong><em>Trái Đất từng rất xinh đẹp của chúng ta đang quay những vòng quay cuối cùng khép lại năm 2019 chuyển sang năm 2020 trong một trạng thái bất ổn ngày càng gia tăng. Hàng loạt hiện tượng thời tiết cực đoan và thảm họa tự nhiên, biểu hiện rõ nét của biến đổi khí hậu, đã xảy ra trong năm 2019 và xác lập nhiều kỷ lục chưa từng có.</em></strong></p>
+                    <p><strong><em>Trái Đất từng rất xinh đẹp của chúng ta vừa quay những vòng quay cuối cùng khép lại năm 2019 chuyển sang năm 2020 trong một trạng thái bất ổn ngày càng gia tăng. Hàng loạt hiện tượng thời tiết cực đoan và thảm họa tự nhiên, biểu hiện rõ nét của biến đổi khí hậu, đã xảy ra trong năm 2019 và xác lập nhiều kỷ lục chưa từng có.</em></strong></p>
 
-                    <p>Nói một cách hình ảnh, Trái Đất giống như một cơ thể Tứ Đại. Tứ Đại là 4 nguyên tố <strong>Nước, Khí, Đất, Lửa</strong> hình thành nên Trái Đất, tạo nên vạn vật - theo quan niệm của cả triết học cổ đại phương Đông và phương Tây. Trong cơ thể đó, Nước là nhựa sống chảy trong cơ thể sinh vật; Nhờ Khí, sinh vật hô hấp để duy trì sự sống; Còn Đất là vật chất, là hình hài tự nhiên; Phải cần đến Lửa để sinh vật xây dựng, duy trì và lan truyền năng lượng.</p>
+                    <p>Nói một cách hình ảnh, Trái Đất giống như một cơ thể Tứ Đại. Tứ Đại là 4 nguyên tố <strong>Nước, Khí, Đất, Lửa</strong> hình thành nên Trái Đất, tạo nên vạn vật - theo một số quan niệm của cả triết học cổ đại phương Đông và phương Tây. Trong cơ thể đó, Nước là nhựa sống chảy trong cơ thể sinh vật; Nhờ Khí, sinh vật hô hấp để duy trì sự sống; Còn Đất là vật chất, là hình hài tự nhiên; Phải cần đến Lửa để sinh vật xây dựng, duy trì và lan truyền năng lượng.</p>
 
                     <p>Và cơ thể Tứ Đại của Trái Đất đang lâm bệnh, với rất nhiều vết thương lớn.</p>
 
@@ -96,8 +102,10 @@
                             <div class="swiper-slide"><img src="images/tab1/img-5.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="images/tab1/img-6.jpg" alt=""></div>
                             <div class="swiper-slide"><img src="images/tab1/img-7.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="images/tab1/img-8.jpg" alt=""></div>
                         </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
 
                     <ul id="firstGalleryAnchor">
@@ -109,7 +117,6 @@
                         <li>5</li>
                         <li>6</li>
                         <li>7</li>
-                        <li>8</li>
                         <li class="next">&#62;</li>
                     </ul>
                 </div>
@@ -368,7 +375,7 @@
                 </div>
 
                 <div class="emag-subsection" hidden="true">
-                    <div class="w980 emag-image">
+                    <div class="w1120 emag-image">
                         <img src="images/tab2/img-17.jpg" alt="">
                         <p class="emag-caption">Lửa là một trong những phát minh đầu tiên, quan trọng nhất của con người. Photo: Maxim Tajer / Unsplash</p>
                     </div>
@@ -411,6 +418,32 @@
                         <p>Trong suốt chiều dài của lịch sử Trái Đất, lửa là yếu tố không thể thiếu đổi với sự tiến hóa của hệ thực vật và động vật. Nhưng ở thời ngày nay, dưới sự xuất hiện của con người, chúng ta đang sử dụng lửa quá mức cho phép, khiến hành tinh ngày một ô nhiễm, mất đi vẻ đẹp hoang sơ vốn có của nó.</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="w980 emag-selector">
+                <ul>
+                    <li>
+                        <img src="images/tab2/img-1.jpg" alt="" class="emag-selector--img">
+                        <img src="images/tab2/selector-1.png" alt="" class="emag-selector--text">
+                    </li>
+
+                    <li>
+                        <img src="images/tab2/img-2.jpg" alt="" class="emag-selector--img">
+                        <img src="images/tab2/selector-2.png" alt="" class="emag-selector--text">
+                    </li>
+
+                    <li>
+                        <img src="images/tab2/img-3.jpg" alt="" class="emag-selector--img">
+                        <img src="images/tab2/selector-3.png" alt="" class="emag-selector--text">
+                    </li>
+
+                    <li>
+                        <img src="images/tab2/img-4.jpg" alt="" class="emag-selector--img">
+                        <img src="images/tab2/selector-4.png" alt="" class="emag-selector--text">
+                    </li>
+                </ul>
+
+                <p class="emag-notice">Độc giả click vào từng ô để xem nội dung</p>
             </div>
 
             <div class="emag-credit w660">
