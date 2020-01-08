@@ -26,6 +26,13 @@ em {
     background-color: #000;
     color: #7e7e7e;
 }
+.emag-wrapper[data-section="2"] {
+    background: url('../images/tab3/bg.jpg') repeat;
+}
+.emag-wrapper[data-section="3"] {
+    background-color: #000;
+    color: #9b9b9b;
+}
 
 /* Cover */
 .emag-cover {
@@ -62,6 +69,30 @@ p.emag-caption {
     font-size: 14px;
     line-height: 20px;
     margin-top: 5px;
+}
+.emag-fw {
+    background-color: #002432;
+    color: #fefefe;
+    padding-top: 30px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+}
+.emag-hasborder {
+    border-left: solid 5px #014c69;
+}
+.emag-fw-border {
+    background-color: #002432;
+    color: #fefefe;
+    padding-top: 30px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+    border: solid 1px #014c69;
+}
+p.heading {
+    font-family: 'Swiss', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* Credit */

@@ -29,6 +29,8 @@
                     $(wrapper).attr('data-section', activeIndex);
                     $(children).attr('hidden', 'true');
                     $(children).eq(activeIndex).removeAttr('hidden');
+
+                    $(window).scrollTop(0);
                 })
             }
 
